@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+   .nav-items {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top:10px;
+  width: 92%;
+  background: rgb(255, 255, 255 ,1);
+  padding: 5px 20px  ;
+  border-radius:12px;
+  align-items: center;
+  
+  
+}
+    .icons span{
+        margin-top: px;
+        margin-right: 3px;
+        font-size: 10px;
+        color: rgb(225, 164, 43);
+       margin-left: 10px;
+       font-family: 'Poppins', sans-serif;
+       cursor: pointer;
+
+        }
+        .icons button{
+        margin-top: 10px;
+        margin-right: 0px;
+        font-size: 5px;
+        color: RGB(13, 71, 161);
+        background-color: rgb(225, 164, 43);;
+        border: 0.3px solid black;;
+        cursor: pointer;
+       
+        }
+      body{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      
+      }
+      .logo{
+        margin-left: 30px;
+      }
+ 
+      .heading{
+       
+  position: absolute;   
+  top: 13%;
+  left: 2%;
+  color: rgb(180,150,90);
+      }
+        
+      
+   
+ 
+p{
+    position: absolute;  
+    top: 27%;
+    left: 2%;
+    color: rgb(180,150,90);
+}
+
+
+.card1{
+     background-color: rgba(18,42,72);
+    width: 200px;
+   border: 1px solid rgb(180,150,90);
+   border-radius: 10px;
+padding: 5px;
+color:rgba(235,235,235) ;
+cursor: pointer;}
+   
+
+.card2{
+   background-color: rgba(18,42,72);
+    width: 200px;
+   border: 1px solid rgb(180,150,90);
+   border-radius: 10px;
+padding: 5px;
+color:rgba(235,235,235) ;
+cursor: pointer;}
+
+.card3{
+   background-color: rgba(18,42,72);
+    width: 200px;
+   border: 1px solid rgb(180,150,90);
+   border-radius: 10px;
+padding: 5px;
+color:rgba(235,235,235) ;
+cursor: pointer;}
+
+.footcard{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer{
+    background-color: rgb(8,23,45);
+    border: 1px solid rgb(198,166,100);
+    padding: 20px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.bi-c-circle,.bi-x-diamond-fill,.bi-gear-wide-connected,.bi-search{
+    color: rgb(198,166,100);
+    ;
+}
+.searchbar{
+   display: flex;
+  
+   justify-content: center;
+   justify-content: space-around;
+   border: 1px solid rgb(198,166,100) ;
+   border-radius: 10px;
+   padding-top:10px;
+   padding-bottom:10px;
+   margin: 3px;
+   background-color: rgb(8,23,45);
+
+
+}
+
+.select,.inpput,.sort,.price{
+    color: rgb(198,166,100);
+    border: solid 2px  rgb(198,166,100);
+    background-color: rgb(8,23,45);
+    border-radius: 10px;
+
+}
+
+.body{background-color: rgb(242,237,229);}
+
+
+    .featuring{
+        display: flex;
+        justify-content: center;
+        color: rgb(198,166,100);
+
+    }
+
+    .featurecard{
+        display: flex;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr ;
+        
+     
+        
+    }
+    .noida,.banglore,.gurugram,.delhi,.mumbai {
+        border: 2px solid rgb(198,166,100) ;
+        background-color: rgb(8,23,45);
+        border-radius: 15px;
+        display: block;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 2px;
+        margin: 10px;
+        color: rgb(198,166,100);
+       
+    }
+    
+    .propimg{
+        border-radius: 10px;
+        border: 1px solid rgb(198,166,100);
+     margin: 1px;
+     align-items: center;
+    }
+
+    .location{
+      margin-right: 20px;
+    }
+    .viewdetails{
+        background-color:rgb(8,23,45);
+        color: rgb(198,166,100);
+        border: 0.5px solid rgb(198,166,100);
+        border-radius: 10px;
+    }
+    .footh{
+        color: rgb(198,166,100);
+        text-align: center;
+    }
+
+
+        </style>
+<body class="body">
+    
+
+    <!-- HEADER -->
+    <header>
+        <div class="ALL"></div>
+        <nav class="nav-items">
+        <div class="logo"><img src="https://i.postimg.cc/NfC6wFt5/ICON.png" width="100px" ></div>
+        <div class="icons">
+            <span>Home</span>
+            <span>Listings</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span class="">
+                <button>Log In</button>
+                <button>Sign up</button>
+            </span>
+            
+        </div>
+    </nav>
+    
+ <img src="https://i.postimg.cc/qvZjQQqz/image.png" class="upper-image" width="100%" height="auto" >
+ 
+ <div class="heading">
+   <h1>Find your Dreams</h1></div>
+   <p>search property for sale and rent</p>
+</div>
+    </header>
+ 
+    <!-- searchbar -->
+     <div class="searchbar">
+    <input type="text" placeholder="Search property..."  class="inpput"/>
+
+<select name="location" class="select">
+  <option value="">All Locations</option>
+  <option value="noida">Noida</option>
+  <option value="delhi">Delhi</option>
+  <option value="Bangalore">Bangalore</option>
+  <option value="gurugram">gurugram</option>
+  <option value="mumbai">mumbai</option>
+  </select>
+
+<select name="price" class="price">
+  <option value="">All Prices</option>
+  <option value="below50">below 50 l</option>
+  <option value="below1cr">below 1cr</option>
+   <option value="below1.5cr">below 1.5cr</option>
+  <option value="below2cr">below 2 cr</option>
+</select>
+
+<select name="sort" class="sort">
+  <option value="">Sort By</option>
+  <option value="new">Newest</option>
+  <option value="old">Oldest</option>
+</select>
+</div>
+<br><br>
+
+
+<!-- Listings -->
+
+<h1 class="featuring">Featured Lists</h1>
+<h5 class="featuring">----popular propeties for you----</h5>
+
+
+<!-- cards -->
+
+<div class="featurecard">
+    <div class="noida">
+        <img src="https://i.postimg.cc/mDVcNp2g/noida1.png" height="120px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,50,00,000</h2>
+       <p1 class="location">NOIDA</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+
+
+    <div class="noida">
+    <img src="https://i.postimg.cc/FswYZLmg/noida2.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 50,00,000</h2>
+        <p1 class="location">NOIDA</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+
+
+    <div class="banglore">
+<img src="https://i.postimg.cc/SsQRsLL5/banglore1.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,00,00,000</h2>
+        <p1 class="location">banglore</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="banglore">
+<img src="https://i.postimg.cc/nVPrFDsb/banglore2.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 2,00,00,000</h2>
+        <p1 class="location">Bangalore</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="mumbai">
+<img src="https://i.postimg.cc/1zs5C0dy/mumbai1.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,00,00,000</h2>
+        <p1 class="location">Mumbai</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="mumbai">
+<img src="https://i.postimg.cc/d3bJ8Gd3/mumbai2.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,50,00,000</h2>
+        <p1 class="location">Mumbai</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="delhi">
+<img src="https://i.postimg.cc/6pLBv2pk/delhi1.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,00,00,000</h2>
+        <p1 class="location">Delhi</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+   <div class="delhi">
+<img src="https://i.postimg.cc/sX8zr5T6/delhi2.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 50,00,000</h2>
+        <p1 class="location">Delhi</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+   <div class="gurugram">
+<img src="https://i.postimg.cc/v8J17nGM/gurugram1.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 1,50,00,000</h2>
+        <p1 class="location">Gurugram</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+    <div class="gurugram">
+<img src="https://i.postimg.cc/K8NRysBg/gurugram2.jpg" height="100px" class="propimg">
+        <h5 class="imagename">VINTAGE LOOK VILLA</h5>
+        <h2 class="propertyprice">₹ 2,00,00,000</h2>
+        <p1 class="location">Gurugram</p1>
+        <button class="viewdetails">View Details</button>
+    </div>
+</div>
+
+     
+        
+    <!-- footer  -->
+     <footer>
+        <h1 class="footh">How it works?</h1>
+        <div class="footcard">
+       <div class="card1">
+        
+        <h3 class="bi bi-search">   search and Discover</h3>
+        <br>
+        <p1>Find properties easily</p1>
+       </div>
+       <div class="card2">
+        <h3 class="bi bi-gear-wide-connected">   connect with agent</h3>
+        <br>
+        <p1>get in touch with our agents</p1></div>
+       <div class="card3">
+        <h3 class="bi bi-x-diamond-fill">   close the deal</h3>
+        <br>
+        <p1>Make your move with confidence</p1>
+       </div>
+        </div>
+        <br><br><br><br>
+        <p1 class="bi bi-c-circle">. 2026 OWN your home .ALL RIGHTS RESERVED</p1>
+     </footer>
+
+
+
+
+
+     <script>
+  const locationSelect = document.querySelector(".select");
+  const priceSelect = document.querySelector(".price");
+  const cards = document.querySelectorAll(".featurecard > div");
+
+  function filterProperties() {
+    const selectedLocation = locationSelect.value.toLowerCase();
+    const selectedPrice = priceSelect.value;
+
+    cards.forEach(card => {
+      const locationText = card.querySelector(".location").innerText.toLowerCase();
+      const priceText = card.querySelector(".propertyprice").innerText.replace(/[^0-9]/g, "");
+      const priceValue = parseInt(priceText);
+
+      let locationMatch = selectedLocation === "" || locationText.includes(selectedLocation);
+      let priceMatch = true;
+
+      if (selectedPrice === "below50") priceMatch = priceValue <= 5000000;
+      if (selectedPrice === "below1cr") priceMatch = priceValue <= 10000000;
+      if (selectedPrice === "below1.5cr") priceMatch = priceValue <= 15000000;
+      if (selectedPrice === "below2cr") priceMatch = priceValue <= 20000000;
+
+      card.style.display = locationMatch && priceMatch ? "block" : "none";
+    });
+  }
+
+  locationSelect.addEventListener("change", filterProperties);
+  priceSelect.addEventListener("change", filterProperties);
+</script>
+
+
+
+</body>
+</html>
